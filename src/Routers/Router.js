@@ -1,3 +1,4 @@
+import Ecommerce from "../Pages/Ecommerce/Ecommerce";
 import Home from "../Pages/Home/Home";
 import Main from "../Pages/Main/Main";
 
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/ecommerce',
+                element: <Ecommerce></Ecommerce>
             }
         ]
     }
