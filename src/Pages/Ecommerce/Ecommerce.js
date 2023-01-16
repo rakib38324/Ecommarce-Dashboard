@@ -1,16 +1,89 @@
 import React from 'react';
-import { FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaNewspaper,FaShoppingBag,FaUsers } from "react-icons/fa";
 
 const Ecommerce = () => {
 
     const value = 2.65
+    const order = -0.82
+    const coustomer = -1.02
 
     return (
         <div className=' bg-base-200'>
 
             <div className='flex  flex-col-reverse lg:grid lg:grid-cols-12'>
                 <div className='col-span-9'>
-                    <p>hello</p>
+                    <div className='lg:grid lg:grid-cols-3 m-2 gap-2'>
+                        <div>
+                            <div className='flex justify-between bg-white p-2 rounded-2xl'>
+                                <div className='flex'>
+                                    <p className='text-3xl bg-blue-400 my-auto p-2 rounded-lg'><FaNewspaper></FaNewspaper></p>
+                                    <div className='pl-2'>
+                                        <p className='font-semibold  text-slate-400'>Revenue</p>
+                                        <p className='font-semibold text-xl'>$21,456</p>
+                                    </div>
+                                </div>
+                                <p className='mt-8 mr-3'>
+                                {
+                                        value >= 0 ?
+                                            <p className='text-green-600 bg-green-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                                                +{value}%
+                                            </p>
+                                            :
+                                            <p className='text-red-600  bg-red-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                                                {value}%
+                                            </p>
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='flex justify-between bg-white p-2 rounded-2xl'>
+                                <div className='flex'>
+                                    <p className='text-3xl bg-blue-400 my-auto p-2 rounded-lg'><FaShoppingBag></FaShoppingBag></p>
+                                    <div className='pl-2'>
+                                        <p className='font-semibold  text-slate-400'>Order</p>
+                                        <p className='font-semibold text-xl'>$45,456</p>
+                                    </div>
+                                </div>
+                                <p className='mt-8 mr-3'>
+                                {
+                                        order >= 0 ?
+                                            <p className='text-green-600 bg-green-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                                                +{order}%
+                                            </p>
+                                            :
+                                            <p className='text-red-600  bg-red-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                                                {order}%
+                                            </p>
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='flex justify-between bg-white p-2 rounded-2xl'>
+                                <div className='flex'>
+                                    <p className='text-3xl bg-blue-400 my-auto p-2 rounded-lg'><FaUsers></FaUsers></p>
+                                    <div className='pl-2'>
+                                        <p className='font-semibold  text-slate-400'>Coustomer</p>
+                                        <p className='font-semibold text-xl'>$21,456</p>
+                                    </div>
+                                </div>
+                                <p className='mt-8 mr-3'>
+                                {
+                                        coustomer >= 0 ?
+                                            <p className='text-green-600 bg-green-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                                                +{coustomer}%
+                                            </p>
+                                            :
+                                            <p className='text-red-600  bg-red-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                                                {coustomer}%
+                                            </p>
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
 
                 <div className='col-span-3 bg-base-200'>
@@ -52,11 +125,11 @@ const Ecommerce = () => {
                                 <p className='text-slate-400 flex justify-center mb-3'>
                                     {
                                         value >= 0 ?
-                                            <p className='text-green-600 bg-green-300 text-center mr-2 px-2 rounded-xl'>
+                                            <p className='text-green-600 bg-green-200 text-center mr-2 px-2 text-sm rounded-xl'>
                                                 +{value}%
                                             </p>
                                             :
-                                            <p className='text-red-600  bg-red-300 text-center mr-2 px-2 rounded-xl'>
+                                            <p className='text-red-600  bg-red-200 text-center mr-2 px-2 text-sm rounded-xl'>
                                                 {value}%
                                             </p>
                                     }
@@ -74,8 +147,8 @@ const Ecommerce = () => {
                                         <p className='text-xl font-bold text-slate-400'>Sep</p>
                                     </div>
                                     <div className='pl-2 lg:pl-0'>
-                                    <p className='w-full h-10 text-slate-400 pt-3 overflow-hidden'>Responded to need "Volunter Activities".</p>
-                                    <button className='font-bold text-blue-600'>Rea More</button>
+                                        <p className='w-full h-10 text-slate-400 pt-3 overflow-hidden'>Responded to need "Volunter Activities".</p>
+                                        <button className='font-bold text-blue-600'>Rea More</button>
                                     </div>
                                 </div>
 
@@ -85,8 +158,8 @@ const Ecommerce = () => {
                                         <p className='text-xl font-bold text-slate-400'>Sep</p>
                                     </div>
                                     <div className='pl-2 lg:pl-0'>
-                                    <p className='w-full h-10 text-slate-400 pt-3 overflow-hidden'>Responded to need "Volunter Activities".</p>
-                                    <button className='font-bold text-blue-600'>Rea More</button>
+                                        <p className='w-full h-10 text-slate-400 pt-3 overflow-hidden'>Responded to need "Volunter Activities".</p>
+                                        <button className='font-bold text-blue-600'>Rea More</button>
                                     </div>
                                 </div>
 
@@ -96,8 +169,8 @@ const Ecommerce = () => {
                                         <p className='text-xl font-bold text-slate-400'>Sep</p>
                                     </div>
                                     <div className='pl-2 lg:pl-0'>
-                                    <p className='w-full h-10 text-slate-400 pt-3 overflow-hidden'>Responded to need "Volunter Activities".</p>
-                                    <button className='font-bold text-blue-600'>Rea More</button>
+                                        <p className='w-full h-10 text-slate-400 pt-3 overflow-hidden'>Responded to need "Volunter Activities".</p>
+                                        <button className='font-bold text-blue-600'>Rea More</button>
                                     </div>
                                 </div>
                             </div>
