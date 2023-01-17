@@ -279,7 +279,7 @@ const Ecommerce = () => {
             </div>
 
             <div className='bg-white flex justify-around py-5 text-center border-b-2'>
-              <div >
+              <div>
                 <p className='font-bold text-xl'>1,269</p>
                 <p className='font-semibold text-slate-400'>Products</p>
               </div>
@@ -293,22 +293,22 @@ const Ecommerce = () => {
 
 
             <div className='bg-white'>
-              <div className='flex justify-between'>
+              <div className='flex justify-between pt-4'>
                 <p className='text-xl font-semibold pl-4'>Eaning</p>
-                <p className='pr-3 pt-2'><FaInfoCircle></FaInfoCircle></p>
+                <p className='pr-3 pt-2 '><FaInfoCircle></FaInfoCircle></p>
               </div>
               <div className='text-center'>
                 <div className="radial-progress mt-4 text-green-600" style={{ "--value": 70 }}>70%</div>
                 <p className='font-semibold text-xl pt-5'>$26,256</p>
-                <p className='text-slate-400'>Earning this Month</p>
-                <p className='text-slate-400 flex justify-center mb-3'>
+                <p className='text-slate-400 pt-1'>Earning this Month</p>
+                <p className='text-slate-400 flex justify-center mb-3 pt-1'>
                   {
                     value >= 0 ?
-                      <p className='text-green-600 bg-green-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                      <p className='text-green-600 bg-green-200 text-center my-auto mr-2 px-2 text-sm rounded-xl'>
                         +{value}%
                       </p>
                       :
-                      <p className='text-red-600  bg-red-200 text-center mr-2 px-2 text-sm rounded-xl'>
+                      <p className='text-red-600  bg-red-200 text-center my-auto mr-2 px-2 text-sm rounded-xl'>
                         {value}%
                       </p>
                   }
@@ -327,7 +327,7 @@ const Ecommerce = () => {
                   </div>
                   <div className='my-auto w-[75%]  '>
 
-                    <p className="truncate pr-1 text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra lorem leo, sed mattis magna maximus pretium. Nullam ac convallis lacus. Suspendisse iaculis augue eget mi malesuada, vel commodo sem luctus. Aenean ut consequat purus. Curabitur accumsan massa et sapien semper, vel pretium diam fringilla. Ut cursus leo leo, sed iaculis turpis tincidunt congue. Nullam ut sollicitudin lectus. Praesent ultrices, tortor id congue posuere, mauris velit tristique ex, ut fringilla elit nisi vel diam. Nulla at quam eget libero laoreet tempor. Etiam fringilla mi a orci vehicula scelerisque. Pellentesque vehicula malesuada lorem quis facilisis. Proin tempor gravida tortor, eget condimentum lorem mollis non</p>
+                    <p className="mgy-1 truncate pr-1 text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra lorem leo, sed mattis magna maximus pretium. Nullam ac convallis lacus. Suspendisse iaculis augue eget mi malesuada, vel commodo sem luctus. Aenean ut consequat purus. Curabitur accumsan massa et sapien semper, vel pretium diam fringilla. Ut cursus leo leo, sed iaculis turpis tincidunt congue. Nullam ut sollicitudin lectus. Praesent ultrices, tortor id congue posuere, mauris velit tristique ex, ut fringilla elit nisi vel diam. Nulla at quam eget libero laoreet tempor. Etiam fringilla mi a orci vehicula scelerisque. Pellentesque vehicula malesuada lorem quis facilisis. Proin tempor gravida tortor, eget condimentum lorem mollis non</p>
 
                     <button className='font-bold text-blue-600'>Rea More</button>
                   </div>
@@ -359,12 +359,7 @@ const Ecommerce = () => {
             </div>
           </div>
 
-          <div className="text-center ">
-
-
-
-          </div>
-
+          
 
         </div>
       </div>
