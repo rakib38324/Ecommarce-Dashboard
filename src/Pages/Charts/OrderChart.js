@@ -5,7 +5,7 @@ const OrderChart = () => {
     const data = [
         { name: "Completed", value: 300 },
         { name: "Others", value: 100 },
-        { name: "Pendding", value: 200 },
+        { name: "Pending", value: 200 },
         { name: "Cancle", value: 100 }
     ];
 
@@ -41,7 +41,7 @@ const OrderChart = () => {
                     <p className='text-lg font-semibold pt-3'>100</p>
                   </div>
                   <div className='text-center'>
-                    <p className='font-semibold text-lg'>Pendding</p>
+                    <p className='font-semibold text-lg'>Pending</p>
                     <p className='text-lg font-semibold pt-3'>300</p>
                   </div>
                 </div>     
