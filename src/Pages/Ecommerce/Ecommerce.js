@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaInfoCircle, FaNewspaper, FaShoppingBag, FaUsers, FaAngleDown } from "react-icons/fa";
+import { FaInfoCircle, FaNewspaper, FaShoppingBag, FaUsers, FaAngleDown, FaEllipsisH } from "react-icons/fa";
+import OrderChart from '../Charts/OrderChart';
 
 
 const Ecommerce = () => {
@@ -156,8 +157,20 @@ const Ecommerce = () => {
             <div className='bg-white rounded-md'>
               comming soon
             </div>
-            <div className='bg-white rounded-md'>
-              comming soon
+            <div className='bg-white rounded-md p-2'>
+
+              <div className='flex justify-between'>
+                <p className='text-lg font font-semibold pt-1'>Order Status</p>
+                <p className='mt-2 pr-2'><FaEllipsisH></FaEllipsisH></p>
+              </div>
+
+              <div className=' mt-5'>
+                <OrderChart></OrderChart>
+                
+              </div>
+
+
+
             </div>
             <div className='bg-white rounded-md p-3'>
               <div className='flex justify-between'>
@@ -272,7 +285,7 @@ const Ecommerce = () => {
               </div>
 
             </div>
-            
+
 
             <div className='bg-white'>
               <div className='flex justify-between'>
