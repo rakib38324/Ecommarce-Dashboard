@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaInfoCircle, FaNewspaper, FaShoppingBag, FaUsers, FaAngleDown, FaEllipsisH } from "react-icons/fa";
+import Barchart from '../Charts/Barchart';
 import OrderChart from '../Charts/OrderChart';
 import UserActivity from '../Charts/UserActivity';
 
@@ -148,8 +149,11 @@ const Ecommerce = () => {
 
 
             </div>
-            <div className='col-span-9'>
-              hi
+            <div className='col-span-9 '>
+              
+
+              <Barchart></Barchart>
+
             </div>
           </div>
 
