@@ -85,9 +85,9 @@ const UserActivity = () => {
 
                         <Area type="monotone" dataKey="amt" stroke="#FF0000"
                             fill=" url(#color)" />
-                        <Area type="monotone" dataKey="uv" stroke="#266bd7
-"
+                        <Area type="monotone" dataKey="uv" stroke="#266bd7"
                             fill=" url(#color2)" />
+                            
                         <XAxis dataKey="name" />
                         <YAxis dataKey="pv" />
                         <Tooltip />

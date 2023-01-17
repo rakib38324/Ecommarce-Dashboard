@@ -112,15 +112,20 @@ const Barchart = () => {
                         left: 0,
                         bottom: 0
                     }}
-                    barSize={18}
-
-
+                    barSize={15}
                 >
-                    <XAxis dataKey="name" scale="point" padding={{ left: 20, right: 10 }} />
+                    <defs>
+
+                            <linearGradient id='color2' x1='0' y1="0" x2='0' y2='1'>
+                                <stop offset="0%" stopColor="#0853c9" stopOpacity={1.5} />
+                                <stop offset="90%" stopColor="#FFFFFF" stopOpacity={0} />
+                            </linearGradient>
+                        </defs>
+                    <XAxis dataKey="name" scale="point" padding={{ left: 30, right: 20 }} />
                     <YAxis />
                     <Tooltip />
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />
+                    
+                    <Bar dataKey="pv" fill=" url(#color2)"   />
                 </BarChart>
             </ResponsiveContainer>
         </div>

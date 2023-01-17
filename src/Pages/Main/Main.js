@@ -37,7 +37,10 @@ const Main = () => {
                         <div className="collapse">
                             <input type="checkbox" />
                             <div className="w-full collapse-title text-xl font-medium flex justify-between pr-4">
-                                <span className='my-auto'><FaBorderAll></FaBorderAll></span> <span>Dashboards</span> <span className='my-auto  flex justify-end'><FaAngleDown></FaAngleDown></span>
+                                <p className='flex'>
+                                    <span className='my-auto pr-2'><FaBorderAll></FaBorderAll></span> <span>Dashboards</span>
+                                </p>
+                                <span className='my-auto  flex justify-end'><FaAngleDown></FaAngleDown></span>
                             </div>
                             <div className="collapse-content text-white font-semibold flex flex-col ml-7">
                                 <label className='pb-3' onClick={() => navigate('/ecommerce')} htmlFor="my-drawer">
@@ -58,15 +61,15 @@ const Main = () => {
 
                         <p className='pl-4 font-semiblod'>APPLICATIONS</p>
                         <p className='pl-6 my-3 flex flex-col'>
-                            
+
                             <label className='pb-3 flex' onClick={() => navigate('/home')} htmlFor="my-drawer">
-                            <spam className='my-auto mr-2'><FaRegCalendarAlt></FaRegCalendarAlt></spam> Calendar
+                                <spam className='my-auto mr-2'><FaRegCalendarAlt></FaRegCalendarAlt></spam> Calendar
                             </label>
-                            
+
                             <label className='pb-3 flex' onClick={() => navigate('/home')} htmlFor="my-drawer"> <spma className='my-auto mr-2'><FaRocketchat></FaRocketchat></spma>Chat <spam className='ml-auto  text-red-900 bg-red-400 rounded-lg text-sm px-1  font-bold opacity-50'>Hot</spam>
                             </label>
 
-                            
+
                             {/* <Link className='mb-3 flex'></Link> */}
                             <Link className='mb-3 flex'> <spam className='my-auto mr-2'><FaRegFileAlt></FaRegFileAlt></spam>File Manager</Link>
                             <Link className='mb-3 flex'> <spam className='my-auto mr-2'><FaShopify></FaShopify></spam>Ecommerce <spam className='my-auto ml-auto'><FaAngleDown></FaAngleDown></spam></Link>
