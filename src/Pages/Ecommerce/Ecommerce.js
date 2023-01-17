@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInfoCircle, FaNewspaper, FaShoppingBag, FaUsers, FaAngleDown, FaEllipsisH } from "react-icons/fa";
 import OrderChart from '../Charts/OrderChart';
+import UserActivity from '../Charts/UserActivity';
 
 
 const Ecommerce = () => {
@@ -155,7 +156,7 @@ const Ecommerce = () => {
           {/* utility activity and top order */}
           <div className='lg:grid lg:grid-cols-3 m-2  rounded-2xl p-2 gap-2'>
             <div className='bg-white rounded-md'>
-              comming soon
+              <UserActivity></UserActivity>
             </div>
             <div className='bg-white rounded-md p-2'>
 
