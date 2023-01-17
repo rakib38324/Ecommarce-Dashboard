@@ -40,19 +40,34 @@ const Main = () => {
                                 <span className='my-auto'><FaBorderAll></FaBorderAll></span> <span>Dashboards</span> <span className='my-auto  flex justify-end'><FaAngleDown></FaAngleDown></span>
                             </div>
                             <div className="collapse-content text-white font-semibold flex flex-col ml-7">
-                                <label onClick={()=>navigate('/ecommerce')} htmlFor="my-drawer">
+                                <label className='pb-3' onClick={() => navigate('/ecommerce')} htmlFor="my-drawer">
                                     Ecommerce
-                                    {/* <Link to='/ecommerce' className=''>Ecommerce</Link> */}
+
                                 </label>
-                                <Link to='/' className='my-3'>Saas</Link>
-                                <Link className=''>Crypto</Link>
+                                <label className='pb-3' onClick={() => navigate('/home')} htmlFor="my-drawer">
+                                    Saas
+
+                                </label>
+                                <label className='pb-3' onClick={() => navigate('/home')} htmlFor="my-drawer">
+                                    Crypto
+
+                                </label>
+
                             </div>
                         </div>
 
                         <p className='pl-4 font-semiblod'>APPLICATIONS</p>
                         <p className='pl-6 my-3 flex flex-col'>
-                            <Link className='mb-3 flex'> <spam className='my-auto mr-2'><FaRegCalendarAlt></FaRegCalendarAlt></spam> Calendar</Link>
-                            <Link className='mb-3 flex'> <spma className='my-auto mr-2'><FaRocketchat></FaRocketchat></spma>Chat <spam className='ml-auto  text-red-900 bg-red-400 rounded-lg text-sm px-1  font-bold opacity-50'>Hot</spam></Link>
+                            
+                            <label className='pb-3 flex' onClick={() => navigate('/home')} htmlFor="my-drawer">
+                            <spam className='my-auto mr-2'><FaRegCalendarAlt></FaRegCalendarAlt></spam> Calendar
+                            </label>
+                            
+                            <label className='pb-3 flex' onClick={() => navigate('/home')} htmlFor="my-drawer"> <spma className='my-auto mr-2'><FaRocketchat></FaRocketchat></spma>Chat <spam className='ml-auto  text-red-900 bg-red-400 rounded-lg text-sm px-1  font-bold opacity-50'>Hot</spam>
+                            </label>
+
+                            
+                            {/* <Link className='mb-3 flex'></Link> */}
                             <Link className='mb-3 flex'> <spam className='my-auto mr-2'><FaRegFileAlt></FaRegFileAlt></spam>File Manager</Link>
                             <Link className='mb-3 flex'> <spam className='my-auto mr-2'><FaShopify></FaShopify></spam>Ecommerce <spam className='my-auto ml-auto'><FaAngleDown></FaAngleDown></spam></Link>
                             <Link className='mb-3 flex'> <spam className='my-auto mr-2'><FaMailBulk></FaMailBulk></spam>Email <spam className='my-auto ml-auto'><FaAngleDown></FaAngleDown></spam></Link>
