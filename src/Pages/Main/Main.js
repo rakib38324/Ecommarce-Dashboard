@@ -10,13 +10,13 @@ const Main = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
 
             <div className="drawer">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     {/* <!-- Page content here --> */}
-
+                    <Navbar></Navbar>
                     <Outlet></Outlet>
 
 
